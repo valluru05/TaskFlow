@@ -1,0 +1,21 @@
+
+# Database credentials
+backend/config/database.local.php
+
+# Environment files
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Dependencies
+vendor/
+node_modules/
+backups/

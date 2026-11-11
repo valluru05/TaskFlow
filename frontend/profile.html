@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | TaskFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+
+<div class="app-container">
+    <div id="appSidebar"></div>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div style="display:flex;align-items:center;gap:12px">
+                <button class="mobile-toggle" id="mobileToggle"
+                        aria-label="Open navigation">☰</button>
+                <div>
+                    <h1 class="page-title">My Profile</h1>
+                    <p class="page-subtitle">Manage your account information</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="profile-layout">
+            <div class="card profile-card">
+                <div class="profile-avatar" id="profileAvatar">U</div>
+
+                <h2 id="profileName">Loading profile...</h2>
+                <p id="profileEmail" class="page-subtitle"></p>
+
+                <span class="profile-role" id="profileRole">User</span>
+
+                <div class="profile-divider"></div>
+
+                <div class="profile-detail">
+                    <span>Account ID</span>
+                    <strong id="profileId">—</strong>
+                </div>
+
+                <div class="profile-detail">
+                    <span>Member Since</span>
+                    <strong id="profileJoined">—</strong>
+                </div>
+
+                <div class="profile-detail">
+                    <span>Account Type</span>
+                    <strong id="profileAccountType">—</strong>
+                </div>
+            </div>
+
+            <div class="profile-right">
+                <div class="card profile-welcome">
+                    <h2>Account Overview</h2>
+                    <p class="page-subtitle">
+                        Here's a summary of your TaskFlow activity.
+                    </p>
+                </div>
+
+                <section class="profile-stat-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">▤</div>
+                        <div class="stat-value" id="profileTotal">0</div>
+                        <div class="stat-label">Total Tasks</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon"
+                             style="background:#E8F8EF;color:#16A36A">✓</div>
+                        <div class="stat-value" id="profileCompleted">0</div>
+                        <div class="stat-label">Completed</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon"
+                             style="background:#FFF5DF;color:#D99422">◷</div>
+                        <div class="stat-value" id="profilePending">0</div>
+                        <div class="stat-label">Pending</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon"
+                             style="background:#E9F2FF;color:#3985E8">◉</div>
+                        <div class="stat-value" id="profileProgress">0</div>
+                        <div class="stat-label">In Progress</div>
+                    </div>
+                </section>
+
+                <div class="card profile-about">
+                    <h2>About TaskFlow</h2>
+                    <p>
+                        TaskFlow helps you organize your work, manage priorities,
+                        track deadlines and monitor your productivity in one place.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/profile.js"></script>
+
+</body>
+</html>

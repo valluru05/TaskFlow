@@ -1,0 +1,118 @@
+.profile-layout {
+    display: grid;
+    grid-template-columns: 0.85fr 1.5fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.profile-card {
+    text-align: center;
+    padding: 35px 25px;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #7044D8, #A78BFA);
+    color: white;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.profile-card h2 {
+    color: #28233E;
+    font-size: 23px;
+    margin-bottom: 8px;
+    overflow-wrap: anywhere;
+}
+
+.profile-role {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 7px 18px;
+    border-radius: 20px;
+    background: #F1EBFF;
+    color: #7044D8;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.profile-divider {
+    height: 1px;
+    background: #EEEAF5;
+    margin: 25px 0;
+}
+
+.profile-detail {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    text-align: left;
+    padding: 14px 0;
+    border-bottom: 1px solid #F0EDF6;
+    font-size: 13px;
+}
+
+.profile-detail:last-child {
+    border-bottom: none;
+}
+
+.profile-detail span {
+    color: #817A96;
+}
+
+.profile-detail strong {
+    color: #28233E;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.profile-right {
+    display: grid;
+    gap: 22px;
+}
+
+.profile-welcome h2,
+.profile-about h2 {
+    font-size: 19px;
+    color: #28233E;
+    margin-bottom: 8px;
+}
+
+.profile-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.profile-about p {
+    color: #817A96;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+    .profile-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-stat-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-stat-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-card {
+        padding: 25px 18px;
+    }
+}
